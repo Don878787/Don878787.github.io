@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>更換圖片</title>
+<meta charset="utf-8">
+<style>
+    img{
+        width: 300px;
+    }
+</style>
+<script language="javascript">
+function changeImg(){
+    document.getElementById("pic").innerHTML="<img src='img/2.jpg'>";
+}
+</script>
+</head>
+<body>
+    <h1>點選下圖更換圖片</h1>
+    <div id="pic" onclick="changeImg()">
+        <img src="img/1.jpg">
+    </div>
+</body>
+</html>
