@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<title>更換文字顏色(JavaScript由網頁匯入)</title>
+<meta charset="utf-8">
+<style>
+    .c1 {
+        color:blue;
+    }
+    .c2 {
+        color:red;
+    }
+</style>
+<script language="javascript">
+function changeh1(){
+    document.getElementById("myh1").className="c2";
+}
+</script>
+</head>
+<body>
+<h1 id="myh1" class="c1" onclick="changeh1()">點我改變顏色(JavaScript由網頁匯入)</h1>
+</body>
+</html>
