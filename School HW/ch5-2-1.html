@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>ch5-2-1套用兩個以上的選擇器</title>
+    <meta charset="utf-8">
+    <style>
+        p {
+            font: 16px normal bold sans-serif, "新細明體";
+            color: red;
+        }
+
+        .font24 {
+            font-size: 24px;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .font28.black {
+            /*是類別font28也是類別black*/
+            font-size: 28px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <p>套用標籤p的文字</p>
+    <p class='font24 blue'>套用font24與blue的文字</p>
+    <p class='font28 black'>套用font28與black的文字</p>
+</body>
+
+</html>

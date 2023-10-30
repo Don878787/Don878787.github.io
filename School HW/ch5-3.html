@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <title>ch5-3屬性選擇器</title>
+    <meta charset="utf-8">
+    <style>
+        img[alt] {
+            border: 5px solid red;
+        }
+
+        img[title="salt fields"] {
+            border: 5px solid green;
+        }
+
+        img[title~=tower] {
+            border: 5px solid blue;
+        }
+
+        img[title*=fuc] {
+            border: 5px solid lightpink;
+        }
+
+        img[title^=sicao] {
+            border: 5px solid lightgreen;
+        }
+
+        img[title$=salt] {
+            border: 5px solid lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/1.jpg" title="green tunnels" height="100" width="150" alt="綠色隧道">
+    <img src="img/2.jpg" title="salt fields" height="100" width="150">
+    <img src="img/3.jpg" title="chihkan tower" height="150" width="100">
+    <img src="img/4.jpg" title="confucian temple" height="150" width="100">
+    <img src="img/1.jpg" title="sicao green tunnels" height="100" width="150">
+    <img src="img/2.jpg" title="tile-paved salt" height="100" width="150">
+</body>
+
+</html>
